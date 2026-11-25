@@ -11,7 +11,7 @@ services:
     environment:
       AUTH_URL: http://$LOCALHOST:3000
       DATABASE_URL: postgres://postgres:norish@db:5432/norish
-      MASTER_KEY: zSTAe521EgG0u1Q9M0h+MgW7S5n8VbqiClXjUR1v5bU=
+      MASTER_KEY: ${MASTER_KEY}
       OBSCURA_ENDPOINT: ws://obscura:9222
       REDIS_URL: redis://redis:6379
       UPLOADS_DIR: /app/uploads
